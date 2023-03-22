@@ -1,0 +1,123 @@
+body {
+  background-color: #fafafa;
+  font-family: "Google Sans", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem;
+  color: #263238;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #1E88E5;
+  color: #fff;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+thead th:nth-child(2), thead th:nth-child(3) {
+  width: 10rem;
+}
+
+thead th:nth-child(4) {
+  width: 3rem;
+}
+
+tbody td:nth-child(4) {
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+tr:nth-child(5) td, tr:nth-child(5) th {
+  padding-bottom: 1rem;
+}
+
+th {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  padding: 1rem;
+  color: white;
+}
+
+td {
+  padding: 1rem 0rem 0rem 1rem;
+}
+
+td:nth-child(4) {
+  padding: 0;
+}
+
+
+input[type="text"], input[type="number"], select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+}
+
+
+select {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+select option {
+  background-color: #ffffff;
+}
+
+
+#hasil {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+button {
+  background-color: #009688;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  display: block;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #00695C 
+ 
+}
+
+button:active {
+  transform: scale(0.9);
+  box-shadow: none;
+}
