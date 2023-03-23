@@ -1,3 +1,46 @@
+var tableBody = document.getElementById("matkul");
+
+for (var i = 1; i <= 5; i++) {
+  var row = document.createElement("tr");
+  var mkCell = document.createElement("td");
+  var mkInput = document.createElement("input");
+  mkInput.type = "text";
+  mkInput.id = "mk" + i;
+  mkCell.appendChild(mkInput);
+  row.appendChild(mkCell);
+
+  var sksCell = document.createElement("td");
+  var sksInput = document.createElement("input");
+  sksInput.type = "number";
+  sksInput.min = 1;
+  sksInput.max = 4;
+  sksInput.id = "sks" + i;
+  sksCell.appendChild(sksInput);
+  row.appendChild(sksCell);
+
+  var nilaiCell = document.createElement("td");
+  var nilaiSelect = document.createElement("select");
+  nilaiSelect.id = "nilai" + i;
+  var pilihOption = document.createElement("option");
+  pilihOption.value = "";
+  pilihOption.text = "- Pilih -";
+  nilaiSelect.appendChild(pilihOption);
+  for (var j = 4; j >= 0; j--) {
+      var nilaiOption = document.createElement("option");
+      nilaiOption.value = j;
+      nilaiOption.text = j;
+      nilaiSelect.appendChild(nilaiOption);
+  }
+  nilaiCell.appendChild(nilaiSelect);
+  row.appendChild(nilaiCell);
+
+  var nilaiHurufCell = document.createElement("td");
+  nilaiHurufCell.id = "nilaihuruf" + i;
+  row.appendChild(nilaiHurufCell);
+
+  tableBody.appendChild(row);
+}
+
 function konversiNilai(nilaiElemen, nilaiHurufElemen) {
     const nilai = document.getElementById(nilaiElemen);
     const nilaiHuruf = document.getElementById(nilaiHurufElemen);
