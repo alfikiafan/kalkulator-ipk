@@ -12,9 +12,16 @@ for (var i = 1; i <= 5; i++) {
   var sksCell = document.createElement("td");
   var sksInput = document.createElement("input");
   sksInput.type = "number";
-  sksInput.min = 1;
+  sksInput.min = 2;
   sksInput.max = 4;
   sksInput.id = "sks" + i;
+  sksInput.addEventListener("input", function() {
+  var sksValue = parseInt(this.value);
+  if (sksValue < 2 || sksValue > 4) {
+    alert("SKS minimal 2 dan maksimal 4");
+    this.value = "";
+  }
+});
   sksCell.appendChild(sksInput);
   row.appendChild(sksCell);
 
